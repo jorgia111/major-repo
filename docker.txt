@@ -1,28 +1,46 @@
-1.how to search a docker image in hub.docker.com
-docker search httpd
-2.Download a docker image from hub.docker.com
-docker i>>- mage pull <image_name>:<image_version/tag>
-3.List out docker images from your local system
+ 1.how to install docker
+  .. (yum install docker -y)
+  ..(systemctl start docker) to start the docker
+  ..(systemctl status docker) to check the status
+2.how to search a docker image in hub.docker.com
+  ..docker search httpd or
+  .. do this on terminal(docker search imagename) you will get the image details in the teriminal 
+3.Download a docker image from hub.docker.com
+  ..  (docker pull imagename) you will get the latest version by defoult 
+    if you want download old version do ( docker pull imagename:image version)
+4.List out docker images from your local system
 docker image ls
-4.Create/run/start a docker container from image
-docker run -d --name <container_Name> <image_name>:<image_version/tag>
-d - run your container in back ground (detached)
-5.Expose your application to host server
-docker run -d -p <host_port>:<container_port> --name <container_Name> <image_name>:<Image_version/tag>
-docker run -d --name httpd_server -p 8080:80 httpd:2.2
-6.List out running containers
-docker ps
-7.List out all docker container (running, stpooed, terminated, etc...)
-docker ps -a
-8.run a OS based container which interactive mode (nothing but login to container after it is up and running)
+5.how to run a docker container from image
+ ..(docker run -d --name container_Name image-name) without host_port and container_port
+ ..(docker run -d -t -p 80:80 --name container-name image-name) with port 
+ ..  d - run your container in back ground (detached)
+6.Expose your application to host server
+ ..(docker run -d -p host_port:container_port --name container_Name image_name)
+   (docker run -d --name httpd_server -p 8080:80)
+7.List out running containers
+  (docker ps)
+8.List out all docker container (running, stpooed, terminated, etc...)
+  (docker ps -a)
+9.run a OS based container which interactive mode (nothing but login to container after it is up and running)
 docker run -i -t --name centos_server centos:latest
-i - interactive
-t - Terminal
-9.Stop a container
-docker stop <container_id>
-10.Start a container which is in stopped or exit state
-docker start <container_id>
-11.Remove a container
-docker rm <container_id>
-12.login to a docker container
-docker exec -it <container_Name> /bin/bash
+  i - interactive
+  t - Terminal
+10.Stop a container
+  docker stop name
+11.Start a container which is in stopped or exit state
+   docker start container name
+12.Remove a container
+   first do  (docker stop container name) then 
+   (docker rm container name)
+13.login to a docker  container
+  (docker exec -it container-name /bin/bash)
+14.how to edit index.html 
+  .pwd
+  .cd usr/share/imagename/html/
+  .ls
+  .cat >> index.html
+  .(ctrl c) to exit 
+
+   
+
+` 
