@@ -8,6 +8,7 @@ follow the basic command for github
 7..git add . = add everthing 
 8.. git commit -m "messsage" =  save change 
 9..git push origin branch name = push to github account 
+9..git pull origin master = pull to your master
 10..git checkout master = get back to the master
 11..git branch = to show how many branch you have
 12..git branch -m branchname = to rename the branch 
