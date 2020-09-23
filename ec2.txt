@@ -1,0 +1,10 @@
+general commands about ec2 
+cd ~/.ssh <to find the public key and the do >
+ls < to see key name> 
+cat key name  <to see the key> 
+  some ssh steps 
+1. sudo su <to change root> 
+2. sudo yum update 
+3. yum install httpd
+4.systemmctl start httpd
+
