@@ -7,4 +7,5 @@ cat key name  <to see the key>
 2. sudo yum update 
 3. yum install httpd
 4.systemmctl start httpd
+5.code .
 
