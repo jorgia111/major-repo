@@ -13,6 +13,8 @@ follow the basic command for github
 12..git branch -D branch name = to delete branch 
 13..rm -R repo name = to delete repo
 14..git pull origin master = to update the branch and do (nano filename.txt)
- 
+15 . git init (in order to make connection with remote repo )
+16.git remote add origin then url
+
 
 
