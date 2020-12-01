@@ -1,0 +1,27 @@
+docker ps
+docker images
+docker build . -t node:4.1
+docker images
+docker run -d -p 3000:3000 --name monday node:4.1 //create container
+docker exec -it monday bash
+
+
+docker volume
+(create Dockerfile and index.html)
+docker build . -t nginx:latest
+docker run -d --name website -v $(pwd):/usr/share/nginx/html -p 8080:80 nginx:latest
+docker exec -it website bash
+docker rm -f website
+
+//////////////////////////////////
+docker volumes: share files b/n two containers
+
+///////////////////
+
+
+docker build -t node:menge1
+docker run -d contianer
+docker ps
+docker exec contID bash
+docker history contianer
+docker build -t
