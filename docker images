@@ -1,0 +1,17 @@
+how to create docker images 
+step one creat docker file .
+(FROM nginx:latest
+  ADD . /usr/share/nginx/html)
+  step 2:
+  creat sample app like inde.html (<h1>Welcome to America Part 2</h1>)
+  step 3.
+  build the docker images 
+  (docker build . -t nginx:latest)
+  step 4.
+  after build the images then run the container 
+  (docker run -d --name website -v $(pwd):/usr/share/nginx/html -p 8080:80 nginx:latest)
+  step 5:
+ make sure the container is running  do docker ps 
+ step 6:
+ localhost:8080 
+ 
