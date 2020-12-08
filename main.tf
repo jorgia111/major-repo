@@ -11,3 +11,14 @@ resource "aws_instance" "web" {
  instance_type = "t2.micro"
  key_name = aws_key_pair.sami-key.key_name
 }
+
+key.tf another one 
+
+resource "aws_key_pair" "maji-key" {
+  key_name   = "maji-key"
+  public_key = file("maji-key.pub")
+  lifecycle {
+    ignore_changes = [public_key]
+  }
+}
+
