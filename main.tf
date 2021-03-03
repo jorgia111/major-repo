@@ -142,6 +142,8 @@ resource "aws_ebs_volume" "sabri" {
 
 
 
+https://aws.amazon.com/blogs/aws/amazon-elasticache-update-online-resizing-for-redis-clusters/
+
 
 
 
