@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ### Usage
 
-To start the Flask application, start the application by simply calling the app.py file from the root of the cloned repository
+To start the Flask application, start the application by simply calling the app.py file from the root of the cloned repository.
 
 ```bash
 python3 app.py
